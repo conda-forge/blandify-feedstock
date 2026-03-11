@@ -75,7 +75,7 @@ outputs:
             - python
             - maturin >=1.0,<2.0
       host:
-        - python ${{ python_min }}.*
+        - python >=${{ python_min }}
         - pip
         - maturin >=1.0,<2.0
       run:
