@@ -72,7 +72,7 @@ outputs:
         - if: build_platform != target_platform
           then:
             - cross-python_${{ target_platform }}
-            - python
+            - python ${{ python_min }}.*
             - maturin >=1.0,<2.0
       host:
         - python ${{ python_min }}.*
